@@ -1,12 +1,7 @@
-import React from "react"
+import { Sub } from '../types'
 
 interface Props {
-    subs: Array<{
-        nick: string,
-        subMonths: number,
-        description? : string,
-        avatar: string
-    }>
+    subs: Array<Sub>
 }
 
 
@@ -15,7 +10,7 @@ const List = ({subs}: Props) => {
       <ul>
         {subs.map(sub => (
           <li key={sub.nick}>
-            <img src={sub.avatar} alt={`Avatar for ${sub.nick}`} />
+            <img src={`https://i.pravatar.cc/150?u=${sub.avatar}`} alt={`Avatar for ${sub.nick}`} />
             <h4>{sub.nick} ({sub.subMonths} meses)</h4>
             <p>{sub.description?.substring(0, 100)}</p>
           </li>
