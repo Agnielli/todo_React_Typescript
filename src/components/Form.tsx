@@ -1,4 +1,3 @@
-import { useEffect } from 'react'
 import useNewSubForm from '../hooks/useNewSubForm'
 import {Sub} from '../types'
 
