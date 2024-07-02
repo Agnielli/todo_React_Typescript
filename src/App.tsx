@@ -26,7 +26,7 @@ interface AppState {
 
 function App() {
   const [subs, setSubs] = useState<AppState["subs"]>([]);
-  const [newSubsNumber, setNewSubsNumber] = useState<AppState["newSubsNumber"]>(0)
+  // const [newSubsNumber, setNewSubsNumber] = useState<AppState["newSubsNumber"]>(0)
   const divRef = useRef<HTMLDivElement>(null)
 
   useEffect(() => {
