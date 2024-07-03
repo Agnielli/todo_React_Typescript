@@ -40,7 +40,7 @@ function App() {
 
   return (
     <div className='App' ref={divRef}>
-      <h1>midu subs</h1>
+      <h1>Followers</h1>
       <List subs={subs} />
       <Form onNewSub={handleNewSub}/>
     </div>
